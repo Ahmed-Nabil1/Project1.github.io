@@ -1,0 +1,1473 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(84, 127, 221, 0.7);
+    z-index: 100;
+}
+
+.header-icon1 {
+    color: #FFFFFF;
+    font-size: 22px;
+    margin-left: 25px;
+    margin-top: 15px;
+    margin-right: 23px;
+    float: left;
+}
+
+.header-icon2 {
+    margin-top: 18px;
+    margin-left: 15px;
+    position: absolute;
+    font-size: 15px;
+
+}
+
+.header-input1 {
+    width: 240px;
+    height: 29px;
+    margin-top: 11px;
+    border: 0;
+    border-radius: 20px;
+    float: left;
+
+}
+
+.header-list {
+    float: right;
+    margin-top: 14px;
+    margin-right: 22px;
+    list-style: none;
+}
+
+.header-list li {
+
+    display: inline-block;
+    list-style: none;
+    margin-right: 25px;
+    font-weight: bold;
+    position: relative;
+}
+
+
+.header-list li a {
+    position: relative;
+    padding-bottom: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.header-list li a:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 255);
+    opacity: 0;
+    transition: 1s;
+}
+
+.header-list li a:hover::after {
+    width: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
+
+}
+
+.blog-list {
+    position: relative;
+    display: inline-block;
+}
+
+.blog-insidelist {
+    position: absolute;
+    width: 150px;
+    background-color: #FFFFFF;
+    height: 125px;
+    opacity: 0;
+    z-index: 50;
+    visibility: hidden;
+    transition: 0.7s;
+    left: 0;
+    top: 160%;
+    margin: 5px;
+    border: 1px rgb(91, 83, 209) solid;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.blog-insidelist li a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    color: rgb(119, 130, 230);
+}
+
+.blog-insidelist li {
+    display: block;
+}
+
+.blog-list:hover .blog-insidelist {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*************** Home ****************/
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/360_F_671509713_h0abOwrUCBpJTdiYofw9JhllrI0qZuoN.jpg);
+    background-size: cover;
+}
+
+.home-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-content {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 17px;
+
+}
+
+.home-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+
+.home-p {
+    text-align: center;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    padding: 10px;
+    color: rgb(139, 131, 131);
+}
+
+.home-button1 {
+    width: 120px;
+    height: 50px;
+    border: 0;
+    border-radius: 12px;
+    font-weight: 510;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.home-button2 {
+    width: 120px;
+    height: 50px;
+    border: 0;
+    border-radius: 12px;
+    font-weight: 510;
+    font-size: 18px;
+    background-color: rgb(107, 107, 209);
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+.home-button1:hover {
+    opacity: 0.5;
+}
+
+.home-button2:hover {
+    opacity: 0.5;
+}
+
+/*************** Section 2 ****************/
+
+.Section2 {
+    height: 95vh;
+    overflow: auto;
+}
+
+.section2-title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 85px;
+}
+
+.section2-line {
+    width: 90px;
+    height: 4px;
+    background-color: rgb(84, 84, 190);
+    margin-left: 635px;
+    margin-top: 11px;
+}
+
+.section2-div1 {
+    width: 320px;
+    height: 220px;
+    border: 1px rgb(90, 66, 177) solid;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 70px;
+    float: left;
+    position: relative;
+}
+
+.section2-icon {
+    color: rgb(84, 84, 190);
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section2-divtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section2-divp {
+    margin-bottom: 20px;
+    color: rgb(126, 121, 121);
+}
+
+.Section2 a {
+    text-decoration: none;
+    color: rgb(84, 84, 190);
+}
+
+.section2-div1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    background-color: rgb(137, 147, 238);
+    opacity: 0;
+    z-index: -2;
+}
+
+.section2-div1:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0.4;
+}
+
+.section2-div1:hover .section2-divtitle {
+    color: #ffffff;
+}
+
+.section2-div1:hover .section2-divp {
+    color: black;
+}
+
+
+
+/********************** Section 3 *************************/
+
+.Section3 {
+    background-color: rgb(203, 212, 216);
+    height: 100vh;
+    overflow: auto;
+    width: 100%;
+}
+
+.section3-title {
+    margin-top: 35px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.section3-line {
+    width: 90px;
+    height: 4px;
+    background-color: rgb(114, 114, 218);
+    margin-left: 630px;
+    margin-top: 12px;
+}
+
+.sec3-div1 {
+    position: relative;
+    margin-top: 60px;
+    margin-left: 200px;
+    float: left;
+    margin-right: 40px;
+}
+
+.sec3-div1layer {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    height: 98.5%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    text-align: center;
+    transition: 0.1s;
+    line-height: normal;
+    z-index: 1;
+
+}
+
+.sec3-div1:hover .sec3-div1layer {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.sec3-div1title {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #a1a1a1;
+}
+
+.sec3-div1span {
+    position: relative;
+    top: 20px;
+}
+
+.sec3-icons2 {
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 30px;
+    font-size: 22px;
+    border-radius: 5px;
+    color: #a1a1a1;
+    padding-top: 4px;
+}
+
+.sec3-icons3 {
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 30px;
+    font-size: 22px;
+    border-radius: 5px;
+    color: #a1a1a1;
+    padding-top: 4px;
+}
+
+.sec3-div1icons a {
+    position: relative;
+    display: inline-block;
+    top: 50px;
+}
+
+.sec3-div2 {
+    position: relative;
+    margin-top: 60px;
+    float: left;
+    margin-right: 40px;
+}
+
+.sec3-div2layer {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    height: 98.5%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    text-align: center;
+    transition: 0.1s;
+    line-height: normal;
+    z-index: 1;
+
+}
+
+.sec3-div2:hover .sec3-div2layer {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.sec3-div2title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #a1a1a1;
+}
+
+.sec3-div2span {
+    position: relative;
+    top: 20px;
+}
+
+.sec3-div2icons1 a {
+    position: relative;
+    display: inline-block;
+    top: 50px;
+}
+
+.sec3-div3 {
+    position: relative;
+    margin-top: 60px;
+    float: left;
+}
+
+.sec3-div3layer {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    height: 98.5%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    text-align: center;
+    transition: 0.1s;
+    line-height: normal;
+    z-index: 1;
+
+}
+
+.sec3-div3:hover .sec3-div3layer {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.sec3-div3title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #a1a1a1;
+}
+
+.sec3-div3span {
+    position: relative;
+    top: 20px;
+}
+
+.sec3-div3icons1 a {
+    position: relative;
+    display: inline-block;
+    top: 50px;
+}
+
+.sec3-div4 {
+    position: relative;
+    margin-top: 30px;
+    float: left;
+    margin-left: 200px;
+    margin-right: 40px;
+}
+
+.sec3-div4layer {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    height: 98.5%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    text-align: center;
+    transition: 0.1s;
+    line-height: normal;
+    z-index: 1;
+
+}
+
+.sec3-div4:hover .sec3-div4layer {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.sec3-div4title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #a1a1a1;
+}
+
+.sec3-div4span {
+    position: relative;
+    top: 20px;
+}
+
+.sec3-div4icons1 a {
+    position: relative;
+    display: inline-block;
+    top: 50px;
+}
+
+.sec3-div5 {
+    position: relative;
+    margin-top: 30px;
+    float: left;
+    margin-right: 40px;
+}
+
+.sec3-div5layer {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    height: 98.5%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    text-align: center;
+    transition: 0.1s;
+    line-height: normal;
+    z-index: 1;
+
+}
+
+.sec3-div5:hover .sec3-div5layer {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.sec3-div5title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #a1a1a1;
+}
+
+.sec3-div5span {
+    position: relative;
+    top: 20px;
+}
+
+.sec3-div5icons1 a {
+    position: relative;
+    display: inline-block;
+    top: 50px;
+}
+
+.sec3-div6 {
+    position: relative;
+    margin-top: 30px;
+    float: left;
+}
+
+.sec3-div6layer {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    height: 98.5%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    text-align: center;
+    transition: 0.1s;
+    line-height: normal;
+    z-index: 1;
+
+}
+
+.sec3-div6:hover .sec3-div6layer {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.sec3-div6title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #a1a1a1;
+}
+
+.sec3-div6span {
+    position: relative;
+    top: 20px;
+}
+
+.sec3-div6icons1 a {
+    position: relative;
+    display: inline-block;
+    top: 50px;
+
+}
+
+/********************   Section 4   *******************/
+
+.Section4 {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.sec4-title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+.sec4-line {
+    width: 90px;
+    height: 4px;
+    background-color: rgb(84, 84, 190);
+    margin-left: 630px;
+    margin-top: 10px;
+}
+
+.sec4-div1 {
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgb(84, 84, 190);
+    border-radius: 10px;
+    margin-left: 140px;
+    margin-top: 20px;
+    float: left;
+    margin-right: 80px;
+    position: relative;
+}
+
+.sec4-divtitle {
+    font-size: 24px;
+    margin-left: 50px;
+    margin-top: -30px;
+}
+
+.sec4-divp {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: rgb(150, 147, 147);
+}
+
+.sec4-icons {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: rgb(108, 108, 199);
+}
+
+.sec4-div2 {
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgb(84, 84, 190);
+    border-radius: 10px;
+    margin-top: 20px;
+    float: left;
+    margin-right: 80px;
+    position: relative;
+
+}
+
+.sec4-div3 {
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgb(84, 84, 190);
+    border-radius: 10px;
+    margin-top: 20px;
+    float: left;
+    position: relative;
+
+}
+
+.sec4-div4 {
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgb(84, 84, 190);
+    border-radius: 10px;
+    margin-left: 140px;
+    margin-top: 35px;
+    float: left;
+    margin-right: 80px;
+    position: relative;
+
+}
+
+.sec4-div5 {
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgb(84, 84, 190);
+    border-radius: 10px;
+    margin-top: 35px;
+    float: left;
+    margin-right: 80px;
+    position: relative;
+
+}
+
+.sec4-div6 {
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgb(84, 84, 190);
+    border-radius: 10px;
+    margin-top: 35px;
+    float: left;
+    margin-right: 80px;
+    position: relative;
+
+}
+
+.sec4-divdesign {
+    width: 300px;
+    height: 200px;
+}
+
+.sec4-divdesign:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(107, 107, 182);
+    z-index: -1;
+}
+
+.sec4-divdesign:hover::after {
+    opacity: 0.3;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+}
+
+.sec4-divdesign:hover .sec4-divtitle {
+    color: rgb(13, 32, 202);
+}
+
+.sec4-divdesign:hover .sec4-divp {
+    color: rgb(0, 0, 0);
+}
+
+.sec4-divdesign:hover .sec4-icons {
+    color: rgb(13, 32, 202);
+}
+
+/********************   Section 5  *******************/
+
+.Section5 {
+    width: 100%;
+    height: 85vh;
+}
+
+.sec5-title {
+    font-size: 40px;
+    margin-top: 180px;
+    margin-left: 140px;
+}
+
+.sec5-line {
+    width: 70px;
+    height: 4px;
+    background-color: rgb(84, 84, 190);
+    margin-left: 140px;
+    margin-top: 10px;
+}
+
+.sec5-p {
+    margin-left: 140px;
+    margin-top: 50px;
+    color: rgb(151, 149, 149);
+}
+
+.sec5-list {
+    margin-left: 140px;
+    margin-top: 30px;
+    line-height: 50px;
+    color: #706969;
+}
+
+.sec5-list li {
+    list-style-type: none;
+}
+
+.sec5-icons {
+    color: rgb(84, 84, 190);
+}
+
+.sec5-img {
+    margin-left: 850px;
+    margin-top: -400px;
+}
+
+.empty-list {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.empty-list li.active {
+    background-color: rgb(88, 127, 221);
+}
+
+.empty-list li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 5px;
+    background-color: #a1a1a1;
+}
+
+.empty-list li:hover {
+    background-color: rgb(84, 127, 221);
+}
+
+/********************   Section 6 *******************/
+
+.Section6 {
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    background-image: url(../Images/elegant-wardrobe-setup-stockcake.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.sec6-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #232424a6;
+}
+
+.sec6-content {
+    position: absolute;
+    text-align: center;
+}
+
+.sec6-div1 {
+    float: left;
+    margin-top: 170px;
+    margin-left: 230px;
+    margin-right: 180px;
+}
+
+.sec6-div2 {
+    float: left;
+    margin-top: 170px;
+    margin-right: 180px;
+}
+
+.sec6-div3 {
+    float: left;
+    margin-top: 170px;
+    margin-right: 160px;
+}
+
+.sec6-div4 {
+    float: left;
+    margin-top: 170px;
+
+}
+
+.sec6-icons {
+    color: rgb(132, 170, 221);
+    font-size: 40px;
+}
+
+.sec6-title {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+
+.sec6-p {
+    color: #FFFFFF;
+}
+
+/********************** Section 7 *************************/
+
+.Section7 {
+    width: 100%;
+    height: 125vh;
+}
+
+.sec7-header {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.sec7-title {
+    font-size: 40px;
+}
+
+.sec7-line {
+    width: 90px;
+    height: 4px;
+    background-color: rgb(84, 84, 190);
+    margin-left: 632px;
+    margin-top: 10px;
+}
+
+
+.sec7-container {
+    width: 80%;
+    margin: auto;
+}
+
+.sec7-outsidediv {
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.sec7-div {
+    width: 300px;
+    height: 380px;
+    border: 1px solid rgb(125, 127, 216);
+    float: left;
+    border-radius: 15px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.sec7-divheader {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.sec7-price {
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(125, 127, 216);
+    border-radius: 50px;
+    margin-left: 95px;
+    margin-top: 20px;
+}
+
+.sec7-pricetext {
+    margin-top: 15px;
+    margin-left: 9px;
+    font-size: 32px;
+}
+
+.sec7-pricespan {
+    margin-left: 20px;
+}
+
+.sec7-divlist {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.sec7-divlist li {
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+.sec7-button {
+    width: 170px;
+    height: 30px;
+    border: 2px solid rgb(125, 127, 216);
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.sec7-div:after {
+    content: "";
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    background-color: rgb(125, 127, 216);
+    opacity: 0.5;
+    transition: 0.5;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.sec7-div:hover::after {
+    opacity: 0.5;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+}
+
+.sec7-div:hover .sec7-divheader {
+    color: rgb(77, 34, 177);
+}
+
+.sec7-div:hover .sec7-price {
+    border: 2px solid rgb(47, 7, 165);
+}
+
+/********************** Section 8 *************************/
+
+.Section8 {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: auto;
+    background-image: url(../Images/elegant-men-s-wardrobe-stockcake.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sec8-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #3131317c;
+}
+
+.sec8-content {
+    position: absolute;
+}
+
+.sec8-div1 {
+    margin-top: 140px;
+    margin-left: 200px;
+
+}
+
+.sec8-div2 {
+    margin-left: 750px;
+    margin-top: -146px;
+}
+
+.sec8-content img {
+    border-radius: 40px;
+}
+
+.sec8-title {
+    margin-left: 90px;
+    margin-top: -80px;
+    font-size: 23px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.sec8-job {
+    margin-left: 90px;
+    font-size: 20px;
+    color: rgb(84, 105, 221);
+    margin-bottom: 40px;
+}
+
+.sec8-jobdes {
+    margin-top: 30px;
+    margin-left: 5px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #dbbdbd;
+}
+
+/********************** Section 9 *************************/
+
+.Section9 {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.sec9-header {
+    text-align: center;
+    padding-top: 140px;
+}
+
+.sec9-title {
+    font-size: 40px;
+}
+
+.sec9-line {
+    width: 84px;
+    height: 4px;
+    background-color: rgb(84, 84, 190);
+    margin-left: 632px;
+    margin-top: 9px;
+}
+
+.sec9-container {
+    width: 1100px;
+    height: 370px;
+    /* background-color: #a8b2e0; */
+    margin-top: 40px;
+    margin-left: 125px;
+    overflow: auto;
+}
+
+.sec9-div {
+    width: 320px;
+    height: 310px;
+    border: 0;
+    background-color: #cecbcb;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+    border-radius: 12px;
+    position: relative;
+}
+
+
+.sec9-insidediv {
+    margin-top: 20px;
+}
+
+.sec9-divicons {
+    margin-top: -203px;
+    width: 40px;
+    height: 100px;
+    margin-left: 245.5px;
+    visibility: hidden;
+}
+
+.sec9-icon {
+    width: 38px;
+    height: 40px;
+    background-color: rgb(37, 77, 209);
+    color: white;
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+}
+
+.sec9-divname {
+    font-size: 25px;
+    margin-top: 110px;
+    margin-bottom: 10px;
+}
+
+.sec9-divjob {
+    color: #575555;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.sec9-div2 {
+    width: 320px;
+    height: 310px;
+    border: 0;
+    background-color: #cecbcb;
+    margin-left: 50px;
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+    border-radius: 12px;
+    position: relative;
+}
+
+.sec9-div::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    transition: 0.5s;
+    background-color: rgba(119, 130, 230, 0.5);
+    border-radius: 12px;
+}
+
+.sec9-div:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5;
+}
+
+.sec9-div2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    transition: 0.5s;
+    background-color: rgba(123, 133, 216, 0.5);
+    border-radius: 12px;
+}
+
+.sec9-div2:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5;
+}
+
+.sec9-div:hover .sec9-insidediv .sec9-divicons {
+    visibility: visible;
+}
+
+.sec9-div2:hover .sec9-insidediv .sec9-divicons {
+    visibility: visible;
+}
+
+.sec9-div:hover .sec9-divname {
+    color: white;
+}
+
+.sec9-div2:hover .sec9-divname {
+    color: white;
+}
+
+.sec9-div:hover .sec9-divjob {
+    color: rgb(39, 26, 230);
+}
+
+.sec9-div2:hover .sec9-divjob {
+    color: rgb(33, 35, 184);
+}
+
+
+
+/********************** Section 10 *************************/
+
+.Section10 {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.sec10-header {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.sec10-title {
+    font-size: 44px;
+}
+
+.sec10-line {
+    width: 90px;
+    height: 4px;
+    background-color: rgb(84, 84, 190);
+    margin-left: 630px;
+    margin-top: 11px;
+}
+
+.sec10-div {
+    width: 320px;
+    height: 500px;
+    border: 1px solid rgb(137, 131, 226);
+    margin-top: 50px;
+    margin-left: 145px;
+    border-radius: 15px;
+    float: left;
+    position: relative;
+}
+
+.sec10-img {
+    margin-left: 32px;
+    margin-top: 20px;
+}
+
+.sec10-img img {
+    border-radius: 12px;
+}
+
+.sec10-icons {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 2px;
+}
+
+.sec10-icon {
+    color: rgb(50, 50, 219);
+    margin-left: 45px;
+
+}
+
+.sec10-icon2 {
+    color: rgb(50, 50, 218);
+    margin-left: 12px;
+    margin-right: 2px;
+}
+
+.sec10-job {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+.sec10-jobdes {
+    text-align: center;
+    color: rgb(104, 100, 100);
+    margin-bottom: 25px;
+}
+
+.sec10-details {
+    margin-left: 120px;
+    text-decoration: none;
+}
+
+.sec10-div2 {
+    width: 320px;
+    height: 500px;
+    border: 1px solid rgb(137, 131, 226);
+    margin-top: 50px;
+    border-radius: 15px;
+    float: left;
+    margin-left: 55px;
+    position: relative;
+}
+
+.sec10-div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    transition: 0.5s;
+    background-color: rgba(114, 114, 218, 0.5);
+    opacity: 0.4;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.sec10-div:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.sec10-div2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    transition: 0.5s;
+    background-color: rgba(114, 114, 218, 0.5);
+    opacity: 0.4;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.sec10-div2:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.sec10-div:hover .sec10-job {
+    color: rgb(255, 255, 255);
+}
+
+.sec10-div:hover .sec10-jobdes {
+    color: rgb(3, 25, 145);
+}
+
+.sec10-div2:hover .sec10-job {
+    color: rgb(255, 255, 255);
+}
+
+.sec10-div2:hover .sec10-jobdes {
+    color: rgb(3, 25, 145);
+}
+
+/********************** Last Section *************************/
+
+.LastSection {
+    width: 100%;
+    overflow: auto;
+    padding-top: 100px;
+    margin-bottom: 0;
+}
+
+.lastsec-background {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(209, 219, 233);
+}
+
+.lastsec-img {
+    padding-top: 20px;
+    margin-left: 550px;
+    margin-bottom: 20px;
+}
+
+.lastsec-img img {
+    border-radius: 12px;
+}
+
+.lastsec-icons {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lastsec-icons i {
+    width: 55px;
+    height: 55px;
+    border-radius: 27.5px;
+    color: white;
+    background-color: rgb(144, 166, 218);
+    padding-top: 12px;
+    font-size: 30px;
+    position: relative;
+}
+
+.lastsec-p {
+    text-align: center;
+    color: #6d6969;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+
+.lastsec-icons .lastsec-icon::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgb(144, 166, 218);
+    transition: 0.5s;
+    opacity: 0.4;
+}
+
+.lastsec-icons:hover .lastsec-icon:hover {
+    background-color: rgb(52, 52, 180);
+    transition: 0.5s;
+}
+
+    
+/***********************************************************  The End    ***********************************************************************/   
